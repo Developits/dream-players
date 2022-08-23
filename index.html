@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Select your dream player</title>
+    <!--------------- 
+        bootstrap link 
+         ---------------->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+    <!--------- 
+       css link 
+         -------->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="back-color">
+    <!------------- 
+        banner start 
+           ------------>
+    <header>
+      <div class="banner bg-black text-white align-center text-center">
+        <h1 class="banner-heading">Your dream five player</h1>
+        <p>
+          Fortunately, for us and not so much for them most footballers never
+          get the chance to be at the club of their dreams. In a world where
+          finance now reigns supreme, players hardly ever get to choose where
+          they play their football.We take a look at five players who eventually
+          played for their dream club.
+        </p>
+      </div>
+    </header>
+    <!------------- 
+        banner end 
+           ------------>
+
+    <main class="main pt-5">
+      <section class="container">
+        <div class="row g-5">
+          <div class="col-9">
+            <div class="row g-5">
+              <div class="col-4">
+                <!-- player crad-1 -->
+                <div class="card">
+                  <img src="img/player-1.jpg" class="card-img-top" alt="..." />
+                  <div class="card-body bg-black text-white text-center">
+                    <p class="fs-4 fw-bolder">Lionel Messi</p>
+                    <p>36 Goals . 120 Assist</p>
+                    <button
+                      id="firstPlayer"
+                      class="btn btn-primary"
+                      type="submit"
+                    >
+                      SELECT
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-4">
+                <!-- player crad-2 -->
+                <div class="card">
+                  <img src="img/player-2.jpg" class="card-img-top" alt="..." />
+                  <div class="card-body bg-black text-white text-center">
+                    <p class="fs-4 fw-bolder">Cristiano Ronaldo</p>
+                    <p>36 Goals . 120 Assist</p>
+                    <button
+                      id="secondPlayer"
+                      class="btn btn-primary"
+                      type="submit"
+                    >
+                      SELECT
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-4">
+                <!-- player crad-3 -->
+                <div class="card">
+                  <img src="img/player-3.jpg" class="card-img-top" alt="..." />
+                  <div class="card-body bg-black text-white text-center">
+                    <p class="fs-4 fw-bolder">Neymar Jr.</p>
+                    <p>36 Goals . 120 Assist</p>
+                    <button
+                      id="thirdPlayer"
+                      class="btn btn-primary"
+                      type="submit"
+                    >
+                      SELECT
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row g-5 mt-3">
+              <div class="col-4">
+                <!-- player crad-4 -->
+                <div class="card">
+                  <img src="img/player-4.jpg" class="card-img-top" alt="..." />
+                  <div class="card-body bg-black text-white text-center">
+                    <p class="fs-4 fw-bolder">Karim Benzema</p>
+                    <p>36 Goals . 120 Assist</p>
+                    <button
+                      id="fourthPlayer"
+                      class="btn btn-primary"
+                      type="submit"
+                    >
+                      SELECT
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-4">
+                <!-- player crad-5 -->
+                <div class="card">
+                  <img src="img/player-5.jpg" class="card-img-top" alt="..." />
+                  <div class="card-body bg-black text-white text-center">
+                    <p class="fs-4 fw-bolder">Kylian Mbappé</p>
+                    <p>36 Goals . 120 Assist</p>
+                    <button
+                      id="fifthPlayer"
+                      class="btn btn-primary"
+                      type="submit"
+                    >
+                      SELECT
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-4">
+                <!-- player crad-6 -->
+                <div class="card">
+                  <img src="img/player-6.jpg" class="card-img-top" alt="..." />
+                  <div class="card-body bg-black text-white text-center">
+                    <p class="fs-4 fw-bolder">Harry Kane</p>
+                    <p>36 Goals . 120 Assist</p>
+                    <button
+                      id="sixthPlayer"
+                      class="btn btn-primary"
+                      type="submit"
+                    >
+                      SELECT
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <!-- selected five player -->
+            <div class="row gx-5 playerbox py-3">
+              <div
+                class="playerlist col text-center bg-black text-white border rounded"
+              >
+                <h1>Selected-V</h1>
+                <ol id="demo" class="fs-5 list"></ol>
+              </div>
+            </div>
+            <div class="row g-5 mt-5">
+              <!-- player price calculation -->
+              <div
+                class="col text-center bg-black text-white mt-5 border rounded"
+              >
+                <h1>Budget</h1>
+                <p>
+                  Per player =
+                  <input
+                    id="playerprice"
+                    class="input-field text-white"
+                    type="text"
+                  />
+                </p>
+                <button id="playertotal" class="btn btn-primary" type="submit">
+                  Calculate
+                </button>
+                <p>Player Expenses=$<span id="playertotalprice">00</span></p>
+                <p>
+                  Manager =
+                  <input
+                    id="managerfee"
+                    class="input-field text-white"
+                    type="text"
+                  />
+                </p>
+                <p>
+                  Coach =
+                  <input
+                    id="couchfee"
+                    class="input-field text-white"
+                    type="text"
+                  />
+                </p>
+                <button id="totalcost" class="btn btn-primary" type="submit">
+                  Calculate Total
+                </button>
+                <p>Total=$<span id="totalcostprice">00</span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!--------- 
+      footer start 
+         ---------->
+    <footer>
+      <hr />
+      <p class="text-white text-center">
+        Copyright @ 2022 All Rights Reserved.
+      </p>
+    </footer>
+    <!--------- 
+      footer end 
+         ---------->
+    <!-- javascript link -->
+    <script src="js/utilities.js"></script>
+    <script src="js/selection.js"></script>
+    <script src="js/calculation.js"></script>
+    <!-- bootstrap script link -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

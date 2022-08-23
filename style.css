@@ -1,0 +1,23 @@
+.banner {
+  padding: 100px;
+}
+.banner-heading {
+  color: #ff5e19;
+  font-size: 74px;
+}
+.back-color {
+  background-color: #151515;
+}
+hr {
+  margin-top: 130px;
+  height: 5px;
+  border: none;
+  background-color: #717171;
+}
+.input-field {
+  background-color: #111111;
+  width: 100px;
+}
+.playerbox {
+  height: 280px;
+}
